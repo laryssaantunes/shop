@@ -2,7 +2,8 @@
 const nextConfig = {
     images:{
         domains:[
-            "fakestoreapi.com"
+            "faketoreapi.com",
+            "ead.ifms.edu.br"
             
         ]
     }
