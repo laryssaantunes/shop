@@ -4,8 +4,7 @@ import Image from "next/image";
 function Header(){
     return(
         <header className={styles.hearder}>
-            <h1>Loja</h1>
-            <div>
+            <div className={styles.imagem}>
             <Image 
                 width={80}
                 height={80}
@@ -13,6 +12,10 @@ function Header(){
             </Image>
 
             </div>
+            <h1 className={styles.nome}>Loja</h1>
+            <div className={styles.iconi}> 🛒 </div>
+            <button className={styles.button}>Adicionar um novo produto</button>
+            <p className={styles.frase}> Os melhores produtos e os melhores preços</p>
         </header>
     );
 }

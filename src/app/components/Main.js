@@ -9,12 +9,13 @@ export default async function Main() {
     return (
         <main className={styles.main}>
             <h2>Produtos</h2>
+            <div classNamme={styles.produtol}>
             {produto.map((produto) => (
                 <div className= {styles.produto} key= {produto.id}>
                     <h3>{produto.title}</h3>
-                    <p>Price: ${produto.price}</p>
+                    <p>Preço: ${produto.price}</p>
                     <p>{produto.description}</p>
-                    <p>Category: {produto.category}</p>
+                    <p>Categoria: {produto.category}</p>
                     <p>Avaliação: {produto.rating.count}</p>
                     <Image 
                         width={100}
@@ -23,6 +24,7 @@ export default async function Main() {
                     />
                 </div>
             ))}
+            </div>
         </main>
     );
 }
