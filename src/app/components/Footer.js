@@ -7,20 +7,19 @@ function Footer() {
     return(
         <footer className={styles.footer}>
             <div className={styles.texto}>
-             <p>Bem Vindo a nossa loja</p>
-             <p>Data de criação: 10 de julho de 2023</p>
+      
+             <p>Data de criação: 10 de junho de 2023</p>
              <ul claassName={styles.redesocial}>
-             <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                    <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+             <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com" >Twitter</a></li>
+                    <li><a href="https://instagram.com" >Instagram</a></li>
              </ul>
             </div>
             <div classNeme={styles.logo}>
             <Image 
                     width={80}
                     height={80}
-                    src="https://w7.pngwing.com/pngs/937/71/png-transparent-barbie-illustration-barbie-logo-barbie-logo-s-text-wikimedia-commons-magenta.png"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQASWKbiYwbNQq9ukVNPqMm8HSZK6h4y5EFABHROpRQUgr19HRLEfptnMMVWSKHyYJu0eE&usqp=CAU"
                     alt="Logo da Loja"
                 />  
             </div>

@@ -2,25 +2,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    background-color: #db22c3;
+    color: rgb(137, 9, 75);
 }
 
 .logo {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    flex: 0 0 auto;
-}
 
-.texto {
-    flex: 1;
 }
 
 .redessocial {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
+    color: rgb(137, 9, 75); 
 }

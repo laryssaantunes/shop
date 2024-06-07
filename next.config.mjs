@@ -2,8 +2,8 @@
 const nextConfig = {
     images:{
         domains:[
-            "fakestoreapi.com"
-            
+            "fakestoreapi.com",
+            "encrypted-tbn0.gstatic.com",
         ]
     }
 };
