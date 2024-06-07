@@ -10,13 +10,11 @@ function Header(){
                 height={80}
                 src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQASWKbiYwbNQq9ukVNPqMm8HSZK6h4y5EFABHROpRQUgr19HRLEfptnMMVWSKHyYJu0eE&usqp=CAU"}>
             </Image>
-            </div>
-            <div className={styles.cordefundo}>
             <h1 className={styles.nome}>Loja</h1>
-            <p className={styles.bemvindo}>Bem Vindo a nossa loja</p>
-            <p className={styles.frase}> Os melhores produtos e os melhores preços</p>
-            <button className={styles.button}>Adicionar um novo produto</button>
+            <div className={styles.iconi}> 🛒 </div>
+            <p> Bem Vindo a nossa loja:    Os melhores produtos e os melhores preços </p>
             </div>
+            <button className={styles.button}>Adicionar um novo produto</button>
         </header>
     );
 }

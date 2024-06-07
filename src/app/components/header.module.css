@@ -14,7 +14,14 @@
 
 
 .imagem {
-    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #db22c3;
+    margin: 20px 0;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
 }
 
 .nome {
@@ -33,21 +40,9 @@
     font-size: 1em;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s;
-    margin: 10px 0;
+    margin: 5px ;
 }
 
-.frase {
-    font-size: 1.5em;
-    color: #db22c3;
-    margin: 20px 0;
-    text-align: center;
-}
 
-.bemvindo{
-    font-size: 1.5em;
-    color: #db22c3;
-    margin: 20px 0;
-    text-align: center; 
-}
+
 
