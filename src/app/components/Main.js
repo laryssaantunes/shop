@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./main.module.css";
 import Image from "next/image";
+import Spinner from "./Spinner";
+
+
 
 export default async function Main() {
     const response = await fetch ("https://fakestoreapi.com/products");
@@ -25,6 +28,11 @@ export default async function Main() {
                 </div>
             ))}
             </div>
+
+
+            if(listProduct[0] == null){
+                return <Spinner/>
+            };
         </main>
     );
 }
