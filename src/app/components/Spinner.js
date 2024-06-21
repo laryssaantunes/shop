@@ -5,7 +5,7 @@ export default function Spinner() {
         widht={100}
         heigth={100}
         scr="12-dots-scale-rotate.svg"
-        all=""
+        all="Imagem carregando"
         ></Image>
     );
 }
