@@ -6,6 +6,8 @@ import Spinner from "./Spinner";
 
 export default function Main() {
     const [listProduct, setListaProduct] = useState([]);
+    const [listComplete, setListComplete] = useState([]);
+    const [search ]
 
     useEffect( ()=> {
         const getProduct = async () =>{
@@ -17,7 +19,7 @@ export default function Main() {
         getProduct();
     }, []);
 
-    const orderAZ = () =>{
+    const orderAz = () =>{
         const neWList = [...listProduct].sort( (a,b) =>
             a.title.localeCompare(b.title)
         );
@@ -32,7 +34,7 @@ export default function Main() {
         setListaProduct(newList);
     }
 
-    const ordemais = () =>{
+    const ordermais = () =>{
         const newList = [...listProduct].sort( (a,b)=>
             a.price - b.price
         );
@@ -62,7 +64,7 @@ export default function Main() {
 
     <main className={styles.main}>
         <h2>Produtos</h2>
-        <div classNamme={styles.produtol}>
+        <h2 classNamme={styles.produtol}>Produtos</h2>
         {produto.map((produto) => (
             <div className= {styles.produto} key= {produto.id}>
                 <h3>{produto.title}</h3>
