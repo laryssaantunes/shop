@@ -1,20 +1,26 @@
-'use client'
+
 import { useEffect, useState } from "react";
 import styles from "./main.module.css";
 import Image from "next/image";
 import Spinner from "./Spinner";
+import Link from "next/link"
 
 export default function Main() {
     const [listProduct, setListaProduct] = useState([]);
     const [listComplete, setListComplete] = useState([]);
-    const [search ]
+    const [search, setSearch] = useState ("");
+    const [errorFetch, setErrorFetch] = useState(false);
 
     useEffect( ()=> {
         const getProduct = async () =>{
+            try{
             const response = await fetch("https://fakestoreapi.com/products")
             const data = await response.json();
-
             setListaProduct(data);
+            setListComplete(data);
+        }catch{
+            setErrorFetch 
+        }
         }
         getProduct();
     }, []);
@@ -49,10 +55,27 @@ export default function Main() {
         setListaProduct(newList);
     }
 
-    if(setListaProduct[0] == null){
-        return <Spinner/>
+    const searchText = (text) => {
+        setSearch(text);
+
+        if( text.trim()== ""){
+            setListaProduct(listComplete);
+            return
+        }
+        const newList = listProduct.filter((product) =>
+        product.title.toUpperCase().trim().includes(search.toUpperCase().trim()))
+        setListaProduct(newList);
     }
 
+    if(errorFetch == true){
+        return <ErrorGetData/>
+    }
+
+    if(setListaProduct[0] == null){
+        return(
+            <Spinner/>
+        )
+    }
     return(
         <>
         <div className={styles.fundo}>
@@ -77,6 +100,9 @@ export default function Main() {
                     height={100}
                     src={produto.image}
                 />
+                <Link href={`/product/${produto.id}`}>
+                    ver produto
+                </Link>
             </div>
         ))}
     </main>

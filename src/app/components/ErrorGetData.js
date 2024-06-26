@@ -1,5 +1,5 @@
-export default Function ErrorGetDate(){
+export default function ErrorGetDate(){
     return(
-        
+       <p>erro</p> 
     )
 }
