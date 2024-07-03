@@ -30,3 +30,8 @@
     flex-direction: column;
 }
 
+.button{
+    display: flex;
+    background-color: #981580;
+}
+

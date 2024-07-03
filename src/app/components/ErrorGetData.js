@@ -1,5 +1,5 @@
 export default function ErrorGetDate(){
     return(
-       <p>erro</p> 
-    )
+       <p>Erro</p> 
+    );
 }

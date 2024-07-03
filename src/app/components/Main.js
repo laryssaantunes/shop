@@ -1,9 +1,9 @@
-
+'use client'
 import { useEffect, useState } from "react";
 import styles from "./main.module.css";
 import Image from "next/image";
 import Spinner from "./Spinner";
-import Link from "next/link"
+import Link from "next/link";
 
 export default function Main() {
     const [listProduct, setListaProduct] = useState([]);
@@ -33,7 +33,7 @@ export default function Main() {
     }
 
     const orderZa = () => {
-        const newList = [...listProduct].sort( (a,b)=>
+        let newList = [...listProduct].sort( (a,b)=>
             a.title.localeCompare(b.title)
         );
         newList = newList.reverse();
